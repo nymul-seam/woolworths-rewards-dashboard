@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Everyday Rewards — Loyalty Dashboard</title>
+<meta name="description" content="Interactive loyalty analytics dashboard for Woolworths Everyday Rewards: customers, points earned and redeemed, store and redemption-type breakdowns, 2024–2025.">
+<meta name="author" content="Nymul Islam">
+<meta property="og:title" content="Everyday Rewards — Loyalty Dashboard"><meta property="og:description" content="Interactive KPI dashboard: 10,000 customers, 105,508 transactions, 31.1M points earned."><meta property="og:type" content="website">
+<meta name="theme-color" content="#FB670C"><link rel="icon" href="assets/img/everyday-rewards-logo.png">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="logos"><img class="er" src="assets/img/everyday-rewards-logo.png" alt="Everyday Rewards"><img class="ww" src="assets/img/woolworths-logo.png" alt="Woolworths"><div><h1>Everyday Rewards — Loyalty Dashboard</h1><p>Customers, points activity, stores &amp; redemptions · Sydney, 2024–2025</p></div></div>
+<div class="filters"><label for="fy">Year</label><select id="fy"><option value="all">All years</option><option value="2024">2024</option><option value="2025">2025</option></select>
+<label for="fs">Store</label><select id="fs"></select><button id="rs">Reset</button></div></header>
+<main>
+<section class="kpis" id="kpis" aria-label="Key metrics"></section>
+<section class="insights" aria-live="polite"><h2>Key insights</h2><ul id="ins"></ul></section>
+<section class="grid">
+<div class="card"><h3>Customer Registration</h3><p>Monthly sign-ups, 2023 · not affected by filters</p><div id="c1"></div></div>
+<div class="card s2"><h3>Points Earned vs Redeemed</h3><p>Monthly · earned (left axis) and redeemed (right axis)</p><div id="c2"></div><div class="lg"><span style="--c:var(--pg)">Points earned</span><span style="--c:var(--or)">Points redeemed</span></div></div>
+</section>
+<section class="grid">
+<div class="card"><h3>Points Earned by Store</h3><p>Treemap · click a tile to filter by store</p><div id="c3"></div></div>
+<div class="card"><h3>Points Redeemed by Type</h3><p>Share of redemptions</p><div id="c4"></div><div class="lg" id="l4"></div></div>
+<div class="card"><h3>Membership Status</h3><p>All customers · not affected by filters</p><div id="c5"></div><div class="lg" id="l5"></div></div>
+</section>
+<section class="grid">
+<div class="card"><h3>Top 10 Redeemers</h3><p>All-time top 10 · responds to year filter</p><div id="c6"></div></div>
+<div class="card s2"><h3>Earned vs Redeemed by Store</h3><p>Each dot is a store · click to filter · dashed line = network redemption rate</p><div id="c7"></div></div>
+</section>
+</main>
+<footer>Data: Woolworths Everyday Rewards dataset (10,000 customers · 105,508 transactions) · Built by Nymul Islam, Operations Data Analyst, The Data &amp; AI Institute</footer>
+<div id="tip"></div>
+<noscript><p style="padding:20px;text-align:center">This dashboard needs JavaScript enabled.</p></noscript>
+<script src="data/dashboard-data.js"></script>
+<script src="js/dashboard.js"></script>
+</body></html>
