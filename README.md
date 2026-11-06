@@ -2,7 +2,7 @@
 
 An interactive analytics dashboard for the **Woolworths Everyday Rewards** loyalty programme, covering 10,000 customers and 105,508 transactions across 11 Sydney stores (2024–2025).
 
-**Live dashboard:** `https://<your-username>.github.io/<repo-name>/`  *(replace after enabling Pages — see below)*
+**Live dashboard:** https://github.com/nymul-seam/woolworths-rewards-dashboard
 
 > Add a screenshot here: save it as `docs/screenshot.png` and uncomment the next line.
 > <!-- ![Dashboard preview](docs/screenshot.png) -->
